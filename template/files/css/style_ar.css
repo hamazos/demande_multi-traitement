@@ -1,0 +1,2375 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    direction: rtl;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+    /* background:url(../img/back_page.png);*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4C7F9F;
+}
+
+    a:active {
+        color: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+img {
+    border: 0;
+}
+
+.Sp_Obligatoir {
+    display: inline;
+    position: relative;
+    top: 0;
+    left: 17px;
+    color: red;
+}
+
+
+.page {
+    width: 90%;
+    padding: 0 10px 5px 10px;
+    height: auto;
+    margin: 0 auto; /*border: 1px solid #CCC;*/
+}
+
+
+.header {
+    background: #f1f7dc url(../img/back_banner.png) repeat-x;
+}
+
+.banner {
+    /*height: 80px;*/
+    width: 100%;
+    padding: 0; /*border: 1px solid #CCC;*/
+}
+
+.ban {
+    display: inline;
+    float: right;
+}
+
+.logo {
+    /*width: 280px;
+    height: 100%;
+    background: url(../img/logo.png) no-repeat;*/
+    margin: 0;
+    background-size: contain;
+        margin: 8px;
+    width: 240px;
+}
+
+.logoMahakim {
+    float: left !important;
+    /*width: 185px;
+    height: 100%;
+    
+    background: url(../img/Logo_mahakim.png) no-repeat;*/
+    margin: 0;
+    background-size: contain;
+}
+
+.MJL {
+    width: 870px;
+    height: 55px;
+    background: url(../img/MJL.html) center no-repeat; /*border: 1px solid #CCC;*/
+}
+
+#menu {
+    margin-bottom: 0;
+}
+
+#menuSitemap {
+    margin: 25px auto;
+}
+
+.menuAdmin {
+    display: none;
+}
+
+.loginDisplay {
+    margin: 10px;
+    float: left;
+}
+
+#menuSitemap ul li {
+    border: 1px solid #fff;
+    padding: 30px 14px;
+    text-align: center;
+    margin-right: 10px; /*width: 90px;*/
+    border-radius: 7px;
+    background: #dce6ec;
+}
+
+    #menuSitemap ul li a {
+        color: #4c7f9f;
+        text-shadow: 1px 1px 1px white;
+    }
+
+.bodyPage {
+    width: 100%;
+    height: auto;
+}
+
+.content_pav {
+    margin: 10px 0;
+    width: 945px;
+    height: 167px;
+}
+
+.pav {
+    height: 167px;
+    width: 130px;
+    display: inline;
+    float: right;
+    margin: 0 0 0 8px;
+    background: url(../img/back_pav_vert.html);
+}
+
+.pav_hover {
+    height: 167px;
+    width: 130px;
+    z-index: 9;
+    background: url(../img/back_pav_mouseover.html);
+    position: absolute;
+}
+
+.pav_contentHover {
+    width: 116px;
+    margin: 30px auto; /*border:1px solid #ccc;*/
+}
+
+    .pav_contentHover li {
+        background: url(../img/back_PavListe.png) repeat;
+        padding: 5px 6px;
+        margin: 0 0 8px 0;
+        font-size: 12px;
+        border-right: 3px solid #666;
+    }
+
+        .pav_contentHover li:hover {
+            background: #dbdf69;
+            color: #fff;
+        }
+
+        .pav_contentHover li a:hover {
+            color: #fff;
+        }
+
+        .pav_contentHover li:active {
+            position: relative;
+            top: 2px;
+        }
+
+.pav_img {
+    height: 130px;
+    width: 130px;
+}
+
+.imgSR {
+    background: url(../img/ImgSR.html);
+}
+
+.Mjl_Porte {
+    background: url(../img/Mjl_Port.html);
+}
+
+.ImgMRamid {
+    background: url(../img/ImgMRamid.html);
+}
+
+.pav_title {
+    height: 30px;
+    width: 130px;
+    background: url(../img/back_title_pav.png) repeat;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid #eaefa1;
+}
+
+    .pav_title img {
+        text-align: center;
+    }
+/*.pav_title h4{
+ font-family:arabswell_1;
+ font-size:11px;
+ color:#fff;
+ text-align:center;
+ padding:5px
+}*/
+.TypeRecherche {
+    top: -9px;
+    right: -9px;
+    color: #3F3F3F;
+    float: right;
+    position: relative;
+    background: #D7D7D7;
+    padding: 20px 8px;
+}
+
+.contentbody {
+    width: 100%;
+    /*min-height:280px;
+        border: 1px solid #ccc;*/
+    background: url(../img/back_content.png) no-repeat bottom right #FCFCFC;
+    border: 1px solid #EDEDE9;
+}
+
+.content {
+    /*float:right;display:inline;*/
+}
+
+.a, .b {
+    /*width:440px;height:472px;border:1px solid #ccc;*/
+}
+
+.Sep {
+    width: 1px;
+    height: 472px;
+    background: url(../img/Sep_Content.png);
+    margin: 0 30px;
+}
+
+#txtNumDC {
+    text-align: center;
+}
+
+.PavServices, .Txtpresentation {
+    padding: 5px;
+    color: #6b686c;
+}
+
+.explAppmob ul li {
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: 12px;
+    line-height: 23px;
+    font-size: 13px;
+}
+
+.explAppmob p {
+    margin: 0 0 20px 0;
+}
+
+.lienTelApp {
+    text-align: center;
+    color: #9fa52a;
+    font-weight: bold;
+}
+
+    .lienTelApp a {
+        color: #9fa52a;
+        text-shadow: 1px 1px 1px white;
+    }
+
+.titlePage {
+    background: #EDEDE9;
+}
+
+    .content h6, .titlePage h6 {
+        /* padding: 5px 0;*/
+        border-bottom: 1px solid #E0E0DC; /* margin: 0 0 20px 0;*/
+    }
+
+    .titlePage h6 {
+        font-size: 14px;
+        padding: 12px 13px 13px 13px;
+        color: #ADABAB;
+    }
+
+.content p {
+    font-size: 12px;
+    line-height: 30px;
+    text-indent: 10px;
+}
+
+
+
+
+/*----------------------------------------- Footer ------------------------------------------------*/
+
+
+.footer {
+    width: 100%;
+    /*height: 130px;*/
+   /* margin: 15px 0;*/
+    background: url(../img/back_footer.png) repeat-y;
+}
+
+.footer_phoneNumber {
+    /*height: 129px;
+    width: 24%;
+     float: right;*/
+    background: url(../img/back_number.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.footer_Links {
+    top: -5px;
+    padding: 5px 0 3px 0;
+    position: relative;
+    border-top: 7px solid #eaf1f5;
+    background: url(../img/back_Links.png);
+}
+
+    .footer_Links span {
+        font-size: 10px;
+        color: #4C7F9F;
+        padding: 3px 0;
+    }
+
+.bloc {
+    /*border:1px solid #ccc;
+    width: 145px;
+    height: 95px;
+    margin-bottom: 5px;*/
+}
+
+    .bloc h6 {
+        color: #4c7f9f;
+        margin: 0 0 3px 0;
+    }
+
+    .bloc ul li {
+        color: #9fa52a;
+        font-size: 12px;
+        padding: 1px 10px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+.bloc, .sepFooter {
+    text-shadow: 1px 1px 1px white;
+}
+
+.sepFooter {
+    background: url(../img/back_SepBlocFooter.png) no-repeat;
+    height: 95px;
+    width: 1px;
+    margin: 0 0px 0 12px;
+}
+
+.footer_sepHoriz {
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #b0cada;
+    position: relative;
+    /*margin-top: 3px;*/
+}
+
+.number_adresse {
+    background: url(../img/logo_number.png) no-repeat;
+    width: 272px;
+    height: 123px;
+    /*margin-top: 2;*/
+}
+
+.clear {
+    clear: both;
+}
+
+/*---------------------------------Services---------------------------------------*/
+.ListeServicesEl {
+    margin: 0 auto 50px auto;
+    width: 290px;
+}
+
+.pavServ {
+    /*margin-bottom:5px;*/
+}
+
+    .pavServ:nth-child(7) {
+        /* margin-left: 0;*/
+    }
+
+.pavServ_hover {
+    height: 125px;
+    width: 108px;
+    z-index: 9;
+    background: url(../img/Back_hover_pav.png) repeat-x;
+    border: 1px solid #EDEDE9;
+    position: absolute;
+}
+
+.pavServ_contentHover {
+    width: 110px;
+    margin: 17px auto; /*border:1px solid #ccc;*/
+}
+
+    .pavServ_contentHover li {
+        background: url(../img/back_PavListe.png) repeat;
+        padding: 5px 6px;
+        margin: 0 0 8px 0;
+        font-size: 12px;
+        border-right: 3px solid #666;
+    }
+
+        .pavServ_contentHover li:hover {
+            background: #dbdf69;
+            color: #fff;
+        }
+
+        .pavServ_contentHover li a:hover {
+            color: #fff;
+        }
+
+        .pavServ_contentHover li:active {
+            position: relative;
+            top: 2px;
+        }
+
+.pavServ_icon {
+    /*height: 88px;border: 1px solid #e2e1e1;*/
+    width: 100%;
+    background: #f8f8f8;
+}
+
+    .pavServ_icon img {
+        padding: 2px 7px;
+        cursor: pointer;
+    }
+
+        .pavServ_icon img:hover {
+            opacity: 0.8;
+        }
+
+.pavServ_icon-Jur {
+    /* height: 80px;
+    width: 95px;*/
+    background: #f8f8f8;
+    border: 1px solid #e2e1e1;
+}
+
+    .pavServ_icon-Jur img {
+        cursor: pointer;
+    }
+
+        .pavServ_icon-Jur img:hover {
+            opacity: 0.8;
+        }
+
+.pavServ_title {
+    /*height: 30px;
+    bottom:0;  padding:2px 0;
+    border-top: 1px solid #fff;*/
+    text-align: center;
+    background: #e2e1e1;
+    position: relative;
+    min-height: 50px;
+    display: table;
+    width: 100%;
+}
+
+
+    .pavServ_title img {
+        text-align: center;
+    }
+
+.pavServ_title-Jur {
+    /*height: 30px;
+    width: 97px;*/
+    background: #e2e1e1;
+    position: relative; /*bottom:0;*/
+    border-top: 1px solid #fff;
+    min-height: 40px;
+}
+
+    .pavServ_title-Jur h6 {
+        text-align: center;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        /*font-size: 1.vh;*/
+    }
+
+    .pavServ_title-Jur img {
+        text-align: center;
+    }
+
+
+
+/*-----------------------------------------pavJuriction-------------------------------------------------*/
+#ListeTypeMahakimID div {
+    border: 2px solid transparent;
+}
+
+.ListeTypeMahakim {
+    margin: 0 auto 0 auto; /*width:566px;*/
+}
+
+.pavJuriction {
+    /*height:114px;
+    width: 97px;*/
+    display: inline;
+    float: right;
+    margin: 15px 0 0 10px;
+}
+
+    .pavJuriction:nth-child(4) {
+        /*margin-left:0;*/
+    }
+
+.pavServ_hover {
+    height: 125px;
+    width: 108px;
+    z-index: 9;
+    background: url(../img/Back_hover_pav.png) repeat-x;
+    border: 1px solid #EDEDE9;
+    position: absolute;
+}
+
+.pavServ_contentHover {
+    width: 110px;
+    margin: 17px auto; /*border:1px solid #ccc;*/
+}
+
+    .pavServ_contentHover li {
+        background: url(../img/back_PavListe.png) repeat;
+        padding: 5px 6px;
+        margin: 0 0 8px 0;
+        font-size: 12px;
+        border-right: 3px solid #666;
+    }
+
+        .pavServ_contentHover li:hover {
+            background: #dbdf69;
+            color: #fff;
+        }
+
+        .pavServ_contentHover li a:hover {
+            color: #fff;
+        }
+
+        .pavServ_contentHover li:active {
+            position: relative;
+            top: 2px;
+        }
+
+
+
+
+/*----------------------------------------- Slider ------------------------------------------------*/
+
+#slider .titleSlider {
+    background: url(../img/back_title_slider.png) repeat-x;
+    padding: 5px 5px;
+    position: relative;
+    z-index: 9999;
+    bottom: 24px;
+    font-size: 11px;
+    color: #4c4f49;
+}
+
+#slider ul li img {
+    /*height:150px;width:530px;*/
+}
+
+#slider ul, #slider li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#slider li {
+    width: 530px;
+    height: 167px;
+    overflow: hidden;
+}
+
+
+
+.BtnDisabled {
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #86a743;
+    white-space: nowrap;
+}
+
+#prevBtn, #nextBtn {
+    display: block;
+    width: 21px;
+    height: 36px;
+    position: relative;
+    top: -98px;
+}
+
+#nextBtn {
+    float: right;
+    right: 8px;
+}
+
+#prevBtn {
+    float: left;
+    left: 8px;
+}
+
+    #prevBtn a, #nextBtn a {
+        display: block;
+        width: 21px;
+        height: 36px; /*border: 1px solid;*/
+        opacity: 0.3;
+        background: url(../img/btnPrev.png) no-repeat;
+    }
+
+        #prevBtn a:hover, #nextBtn a:hover {
+            opacity: 1; /*box-shadow:1px 2px 3px ;*/
+        }
+
+#nextBtn a {
+    background: url(../img/btnNext.png) no-repeat;
+}
+
+
+/*-----------------------------------------  FormRecherche  ------------------------------------------------*/
+.Btnretour {
+    float: left;
+    color: #94A243;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+    .Btnretour:hover {
+        box-shadow: 1px 1px 3px;
+        text-decoration: none;
+    }
+
+.Btn_supprimer {
+    background: url(../img/button/Icon_Delete.png) no-repeat;
+    float: left;
+    height: 24px;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    width: 75px;
+}
+
+    .Btn_supprimer:hover {
+        background: url(../img/button/Icon_DeleteRed.png) no-repeat;
+    }
+
+.Btn_AjouterDoc {
+    background: url(../img/button/Icon_ajouter.png) no-repeat;
+    float: left;
+    height: 24px;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    width: 75px;
+}
+
+    .Btn_AjouterDoc:hover {
+        background: url(../img/button/Icon_ajouterGreen.png) no-repeat;
+    }
+
+.btnEnregitrerAnnonce {
+    background: url(../img/button/Icon_AjouterAnnonceGreen.png) no-repeat;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    width: 170px;
+}
+
+    .btnEnregitrerAnnonce:hover {
+        background: url(../img/button/Icon_AjouterAnnonce.png) no-repeat;
+    }
+
+.btnEnregitrerinfoUser {
+    background: url(../img/button/btn_ModifierInfo.png) no-repeat;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    width: 170px;
+    text-align: left;
+    margin: 10px;
+}
+
+    .btnEnregitrerinfoUser:hover {
+        background: url(../img/button/btn_ModifierInfo_green.png) no-repeat;
+    }
+
+#btnAjouterScan {
+    background: url(../img/button/icon_supprimer.png) no-repeat;
+}
+
+#btnModifierrScan {
+    background: url(../img/button/icon_ajouter-2.png) no-repeat;
+}
+
+.btnScan {
+    width: 35px;
+    height: 35px;
+    display: inline;
+    margin: 0 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+    .btnScan:hover {
+        box-shadow: 1px 1px 5px #ccc;
+    }
+
+.FormRecherche {
+    padding: 2px 5px;
+    margin: auto;
+    width: 100%;
+    font-size: 12px;
+}
+
+.ListeMenu {
+    width: 98%;
+    border-bottom: 1px solid #ccc;
+}
+
+    .ListeMenu ul li {
+        white-space: nowrap;
+        cursor: pointer;
+        display: inline;
+        float: right;
+        border-top: 1px solid #CCC;
+        border-right: 1px solid #CCC;
+        border-left: 1px solid #CCC;
+        margin: 0 4px -1px 0;
+        padding: 9px 7px;
+    }
+
+        .ListeMenu ul li a {
+            color: #94A243;
+            text-shadow: 1px 1px 1px white;
+            cursor: pointer;
+        }
+
+.activeListePanel {
+    background: url(../img/back_titlePanel.png) repeat-x;
+    color: #779958;
+    text-shadow: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*border-bottom: 1px solid #fcfcfc;*/
+}
+
+
+.frm {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px auto;
+    background: #EFF0EB;
+    
+}
+.input-search {
+        border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.form-txt-Num {
+    width:60px;
+    display:inline-block;
+    text-align:center;
+    border: 0;
+}
+
+    .frm:nth-child(2), .frm:nth-child(1), .frmRechercheType {
+        /*height: 38px;*/
+    }
+
+.btnRechetche {
+    /* background: #a6c430 url(../img/button/btn_recherche.png) no-repeat;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    border: 0;*/
+}
+
+/*.select {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}*/
+
+.Textdate {
+    width: 170px;
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.TdBorder {
+    border: 1px solid #A0A0A0;
+    min-height: 30px;
+    padding: 5px 3px;
+    margin: 1px 0;
+}
+
+.TdBorderB {
+    background: #e7ead4;
+    min-height: 30px;
+    padding: 5px 3px;
+    margin: 1px 0;
+}
+
+#Res_InfosDossier P {
+    padding: 2px 5px;
+    font-size: 14px;
+    color: red;
+}
+
+#Res_InfosDossier {
+    width: 100%;
+}
+
+    #Res_InfosDossier table tr td {
+        padding: 5px 2px;
+    }
+
+.tab_Res {
+    width: 100%;
+}
+
+    .tab_Res tr td {
+        border-bottom: 1px solid #CBDDF1;
+        border-right: 1px solid #CBDDF1;
+        padding: 7px;
+    }
+
+    .tab_Res tr:first-child td {
+        border-top: 1px solid #ccc;
+    }
+
+    .tab_Res tr:first-child {
+        /* IE10 */
+        background-image: -ms-linear-gradient(top, #f5fad0 0%, #8a9c14 100%);
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(linear, left top, left bottom, from(#f5fad0), to(#8a9c14));
+        /* Opera */
+        background-image: -o-linear-gradient(linear, left top, left bottom, from(#f5fad0), to(#8a9c14));
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f5fad0), to(#8a9c14));
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(linear, left top, left bottom, from(#f5fad0), to(#8a9c14));
+        /* Proposed W3C Markup */
+        background-image: linear-gradient(linear, left top, left bottom, from(#f5fad0), to(#8a9c14));
+        text-decoration: none;
+        font-size: 12px;
+        color: #00551a;
+        font-weight: bold;
+        text-shadow: 0px 1px 1px #E5E9D1;
+    }
+
+    .tab_Res tr:nth-child(even) {
+        color: #00551a;
+        background-color: #e7ead4;
+    }
+
+#Res_dialog_avancee table {
+    width: 100%;
+}
+
+    #Res_dialog_avancee table tr td {
+        border-bottom: 1px solid #CBDDF1;
+        border-right: 1px solid #CBDDF1;
+        padding: 7px;
+    }
+
+#Res_dialog table {
+    width: 100%;
+}
+
+    #Res_dialog table tr td {
+        border-bottom: 1px solid #CBDDF1;
+        border-right: 1px solid #CBDDF1;
+        padding: 7px;
+    }
+
+    #Res_dialog table tr:first-child {
+        background-color: #f6f9e0;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f5fad0), to(#8a9c14));
+        text-decoration: none;
+        font-size: 12px;
+        color: #00551a;
+        font-weight: bold;
+        text-shadow: 0px 1px 1px #E5E9D1;
+    }
+
+    #Res_dialog table tr:nth-child(even) {
+        color: #00551a;
+        background-color: #e7ead4;
+    }
+
+    #Res_dialog table tr:first-child td {
+        border-top: 1px solid #ccc;
+    }
+
+
+.Gv_Audiences td, .Gv_Audiences th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: .8em;
+}
+/*.Gv_Audiences tr td:nth-child(1), .Gv_Audiences tr th:nth-child(1){display:none;}
+.ContainerGv_Audiences{width: 810px;margin: auto;border: 1px solid #CCC;padding: 10px;}*/
+/*#ContainerGv_Audiences tr td:nth-child(1), #ContainerGv_Audiences tr td:nth-child(2),#ContainerGv_Audiences tr th:nth-child(1), #ContainerGv_Audiences tr th:nth-child(2){display:none;}
+#ContainerGv_Dossiers tr td:nth-child(1), #ContainerGv_Dossiers tr th:nth-child(1){display:none;}*/
+.hidecolonne {
+    display: none;
+}
+
+.Gv_Dossiers td:nth-child(3) {
+    width: 90px;
+}
+
+.Gv_Dossiers tr:last-child td {
+    width: 0;
+}
+
+.Gv_Dossiers td:nth-child(4) {
+    width: 80px;
+}
+
+.Gv_Dossiers td:nth-child(8) {
+    width: 130px;
+}
+
+.Gv_Dossiers td, .Gv_Dossiers th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: .8em;
+}
+/*.Gv_Dossiers tr td:nth-child(1), .Gv_Dossiers tr th:nth-child(1){display:none;}
+.ContainerGv_Dossiers{width: 810px;margin: 5px auto;border: 1px solid #CCC;padding: 10px;}*/
+#txtNomFormation {
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+
+.lblForm {
+    border-bottom: 3px solid #A3A3A3;
+    padding-bottom: 8px;
+    color: #919191;
+}
+
+#MainContent_Lbl_IdJuridiction {
+    display: none;
+}
+
+.ModalPopupBackground {
+    background: #fff;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+.btnFermerPopup {
+    padding: 5px;
+}
+
+.PanelPopup {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 2px 3px 20px black;
+}
+
+.FormError {
+    background: #FEF0F0;
+    border: 0;
+}
+
+.FormError, .ContainerGv_Audiences, .ContainerGv_Dossiers, .ContainerGv_PersonnelsFormation {
+    display: none;
+}
+
+.InformationRecherche {
+    height: 60px;
+}
+
+.InformationRecher {
+    /*color: #717171;*/
+    font-size: 12px;
+}
+
+    .InformationRecher ul li {
+        margin:  0;
+        list-style: circle none inside;
+        text-shadow: 1px 2px 1px #fff;
+        font-style: italic;
+    }
+
+.FormC {
+    display: inline;
+    float: right;
+}
+
+#MainContent_Gv_Annonces tr td:first-child {
+    display: none;
+}
+
+#MainContent_Gv_Annonces tr th:first-child {
+    display: none;
+}
+
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #D2D1D1;
+    border-collapse: collapse;
+}
+
+.dataTables_wrapper {
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+
+.mGrid td {
+    padding: 4px;
+    border: solid 1px #c1c1c1;
+    color: #717171;
+    font-size: 12px;
+}
+
+.mGrid th {
+    padding: 4px 2px;
+    color: #797777;
+    background: #e5e5e5 url(../img/grid_head.png) repeat-x top;
+    border-left: solid 1px #D2D1D1;
+    font-size: 0.8em;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.alt_D {
+    background: url(../img/grid_alt_D.png) repeat-x top;
+}
+
+.mGrid .alt {
+    background: #fcfcfc url(../img/grid_alt.png) repeat-x top;
+}
+
+.odd {
+    background: #fcfcfc url(../img/grid_alt.png) repeat-x top;
+}
+
+.mGrid .pgr {
+    /* background: #424242 url(../img/grd_pgr.png) repeat-x top; */
+}
+
+    .mGrid .pgr table {
+        margin: 5px 0;
+    }
+
+    .mGrid .pgr td {
+        border-width: 0;
+        padding: 0 6px;
+        border: solid 1px #ccc;
+        font-weight: bold;
+        color: red;
+        padding: 2px;
+        line-height: 12px;
+    }
+
+    .mGrid .pgr a {
+        color: #666;
+        text-decoration: none;
+    }
+
+        .mGrid .pgr a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+#Gv_CarteDC tr:nth-child(2) td:last-child {
+    background: red;
+    color: #fff;
+    text-align: center;
+}
+
+#Gv_CarteDC_SAJ2 tr:nth-child(2) td:last-child {
+    background: red;
+    color: #fff;
+    text-align: center;
+}
+/*#Gv_CarteDC_SAJ2 tr:nth-child(2) td:last-child:hover{background:;}*/
+
+.dialogInfo {
+    /*position: absolute; top: 10px;*/
+    background: #FBFCF2;
+    z-index: 99999;
+    border: 1px solid #ccc;
+    padding: 5px; /*width:830px; margin: 0 29px 0 0;*/
+}
+    /*.dialogInfo:hover{
+background: red;
+ color:#fff;
+}*/
+    .dialogInfo p {
+        padding: 10px;
+    }
+
+.dialogInfoHover {
+    background: #ffcac5;
+}
+
+/*---------------------------------Ajouter Annonces-------------------------------------*/
+.DivPanelZoom {
+    display: none;
+    margin-top: 10px;
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+.frmDisp {
+    margin: 20px auto;
+    width: 700px;
+}
+
+.titlefrm h6 {
+    font-size: 13px;
+    padding: 0 5px 5px 0;
+    border-bottom: 1px solid;
+    margin: 0;
+    border-right: 5px solid;
+    color: #4c7f9f;
+}
+
+.frmAnnon {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-top: 0;
+}
+
+    .frmAnnon table tr td {
+        padding: 5px 0;
+        border-bottom: 2px solid #fff;
+    }
+
+    .frmAnnon table tr:first-child td {
+        text-indent: 3px;
+        width: 120px;
+    }
+
+    .frmAnnon table tr td:last-child {
+        width: 556px;
+    }
+
+    .frmAnnon table tr {
+        background: #f7f6f6;
+    }
+
+.frmInfoPers {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-top: 0;
+    font-size: 12px;
+}
+
+    .frmInfoPers table tr td {
+        padding: 5px 0;
+        border-bottom: 2px solid #fff;
+        text-indent: 3px;
+    }
+
+    .frmInfoPers table tr:first-child td {
+        width: 200px;
+    }
+
+    .frmInfoPers table tr td:last-child {
+        width: 556px;
+    }
+
+    .frmInfoPers table tr {
+        background: #f7f6f6;
+    }
+
+
+.frmSection {
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    margin: 5px 0;
+}
+
+.RB_CSearch, .RB2_CSearch {
+    border-radius: 13px;
+}
+
+.FormRC {
+    font-size: 12px;
+}
+
+
+/*---------------------------------Annonces--------------------------------------------*/
+
+.containerAnnonce {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.DatePub {
+    margin: 10px 0;
+    font-size: 11px;
+    color: #ccc;
+}
+
+.titleAnnonce {
+    font-size: 12px; /*margin: 0 0 10px 0;*/
+    color: #365F91;
+    font-weight: bold;
+    border-right: 5px solid #365F91;
+    padding-right: 5px;
+}
+
+#ttrspan {
+    font-size: 11px;
+    color: #ccc;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.titleResumer {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    line-height: 20px;
+}
+
+.annonce, .annonceParJuridiction, .annonceParDate {
+    display: none;
+    height: auto;
+}
+
+    .annonceParDate h5 {
+        font-size: 16px;
+        color: #94A243;
+    }
+
+.detailAnnonce {
+    float: left;
+    border: 0;
+}
+
+.detail {
+    /*width: 651px;
+    height: 20px;*/
+}
+
+.detailAnnonce > div {
+    display: inline;
+    float: right;
+    padding: 0 5px;
+}
+
+    .detailAnnonce > div:first-child {
+        border-left: 1px solid #ccc;
+    }
+
+    .detailAnnonce > div a {
+        color: blue;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+
+        .detailAnnonce > div a:hover {
+            text-decoration: none;
+        }
+
+.loader {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+    /*.imgLoader{width:25px;}*/
+    .loader img {
+        margin: auto;
+    }
+
+.ClsDetailAn {
+    position: absolute;
+    z-index: 9999;
+    width: auto;
+    height: auto;
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px 5px #ccc;
+    padding: 20px;
+}
+
+.closePopup {
+    cursor: pointer;
+    color: Red;
+}
+
+    .closePopup:hover {
+        color: #000;
+    }
+
+.TablePJ {
+    width: 500px;
+}
+
+.P_DetailAnn {
+    width: 600px;
+    border: 1px solid #CCC;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6c6e67;
+}
+
+.maskbody {
+    z-index: 999;
+    background: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.frmRechercheParType, .frmRechercheParDate, .FormRechercheParJuridiction {
+    margin: 10px 0 10px 0;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    width: 635px;
+    margin: 10px auto;
+}
+
+#pageNavPosition {
+    border: 1px solid #ccc;
+}
+
+.listTypeJuridiction {
+    margin: 55px auto;
+    width: 536px;
+}
+
+    .listTypeJuridiction ul {
+        width: 405px;
+        height: 75px;
+        margin: auto;
+    }
+
+        .listTypeJuridiction ul li {
+            width: 100px;
+            height: 100px;
+            border-radius: 7px;
+            border: 1px solid #CCC;
+            display: inline;
+            float: right;
+            margin: 0 0 30px 25px;
+        }
+
+            .listTypeJuridiction ul li:hover {
+                background: #B5CE3C;
+                box-shadow: 1px 1px 6px #ccc;
+                color: #fff;
+            }
+
+            .listTypeJuridiction ul li:active {
+                margin-top: 5px;
+            }
+
+            .listTypeJuridiction ul li div {
+                width: auto;
+                text-align: center;
+                padding: 25px;
+            }
+
+.FormRechercheParJuridiction {
+    border: 1px solid #ccc; /*width: auto;*/
+    height: 20px;
+    padding: 10px;
+}
+
+
+.ddlTribu {
+    display: inline;
+    float: right;
+    margin: 0 0 0 15px;
+}
+
+.displ {
+    display: inline;
+    float: right;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.NbrLecteur {
+    color: #ccc;
+    font-size: 9px;
+    margin-left: 7px;
+}
+
+
+
+#main {
+    /* The main container div */
+    position: relative;
+    margin: 0 auto 25px auto; /*width: 665px; 	border:1px solid #CCCCCC;*/
+    padding: 0 0 60px;
+}
+
+#holder {
+    /* The unordered list that is to be split into pages */ /*width:662px;*/
+    overflow: hidden;
+    position: relative; /*background:url('img/dark_bg.jpg') repeat #4e5355;*/
+    padding-bottom: 10px;
+}
+
+#SpinnerGrid {
+    position: absolute;
+    top: 0;
+}
+
+
+#main_Aud {
+    /* The main container div */
+    position: relative;
+    margin: 0 auto 25px auto; /*width: 665px; 	border:1px solid #CCCCCC;*/
+    padding: 0 0 60px;
+}
+
+.SelectedRow {
+    background: #ffcac5 !important;
+}
+
+#holder_Aud {
+    /* The unordered list that is to be split into pages */ /*width:662px;*/
+    overflow: hidden;
+    position: relative; /*background:url('img/dark_bg.jpg') repeat #4e5355;*/
+    padding-bottom: 10px;
+}
+
+.swControls {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.swControls_aud {
+    margin: -5px auto 7px auto;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 91.8%;
+    border-left: 0;
+}
+
+a.swShowPage {
+    /* The links that initiate the page slide */
+    cursor: pointer;
+    background-color: #BEC9AA;
+    float: right;
+    margin: 4px 3px; /*text-indent:-9999px;*/
+    padding: 5px 8px;
+    color: #fff; /*border:1px solid #ccc;*/ /* CSS3 rounded corners */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    a.swShowPage:hover, a.swShowPage.active {
+        background-color: #2993dd; /*	CSS3 inner shadow */
+        -moz-box-shadow: 0 0 7px #1e435d inset; /*-webkit-box-shadow:0 0 7px #1e435d inset;*/
+        box-shadow: 0 0 7px #1e435d inset;
+    }
+
+#holder li {
+    list-style: none outside none;
+    margin: 10px 3px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.titreJuridiction {
+    border: 1px solid #CCC;
+    width: 657px;
+    padding: 10px;
+    background: #C00;
+    color: white;
+}
+
+
+/* Absolute Center Spinner */
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+    /* Transparent Overlay */
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    /* :not(:required) hides these rules from IE9 and below */
+    .loading:not(:required) {
+        /* hide "loading..." text */
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }
+
+        .loading:not(:required):after {
+            content: '';
+            display: block;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            margin-top: -0.5em;
+            -webkit-animation: spinner 1500ms infinite linear;
+            -moz-animation: spinner 1500ms infinite linear;
+            -ms-animation: spinner 1500ms infinite linear;
+            -o-animation: spinner 1500ms infinite linear;
+            animation: spinner 1500ms infinite linear;
+            border-radius: 0.5em;
+            -webkit-box-shadow: rgba(255, 255,255, 0.75) 1.5em 0 0 0, rgba(255, 255,255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255,255, 0.75) 0 1.5em 0 0, rgba(255, 255,255, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(255, 255,255, 0.5) -1.1em -1.1em 0 0, rgba(255, 255,255, 0.75) 0 -1.5em 0 0, rgba(255, 255,255, 0.75) 1.1em -1.1em 0 0;
+            box-shadow: rgba(255, 255,255, 0.75) 1.5em 0 0 0, rgba(255, 255,255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255,255, 0.75) 0 1.5em 0 0, rgba(255, 255,255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255,255, 0.75) -1.5em 0 0 0, rgba(255, 255,255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255,255, 0.75) 0 -1.5em 0 0, rgba(255, 255,255, 0.75) 1.1em -1.1em 0 0;
+        }
+
+
+
+.MasKRechQSM {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    clear: right;
+    opacity: .4;
+    z-index: 77;
+}
+
+.MasKRech {
+    width: 100%;
+    height: 58px;
+    background: #B8B5B5;
+    position: relative;
+    top: -51px;
+    right: -10px;
+    clear: right;
+    opacity: .4;
+}
+
+.MaskContent {
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#divspinner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #B8B5B5;
+    opacity: .4;
+    z-index: 99999;
+}
+
+
+.MasKGrid {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18px;
+    height: 96%;
+    background: #B8B5B5;
+    opacity: .4;
+    z-index: 99999;
+}
+
+/*********************************Console CarteJudiciaire Formulaire*******************************/
+
+
+.formulaire table tr td {
+    padding: 15px 0 15px 0; /*border-bottom: 2px solid #CCC;*/
+}
+
+    .formulaire table tr td input[type="text"], .formulaire table tr td select {
+        padding-right: 5px;
+        height: 28px;
+    }
+
+    .formulaire table tr td option:first-child {
+        color: #ccc;
+    }
+
+.lienTribunal:hover {
+    text-decoration: underline;
+}
+
+/*input[type=text] {
+    height: 40px;
+    width: 200px;
+    color: #8D8C8C;
+    font-size: 17px;
+    border: 1px solid #C7C4C4;
+}*/
+
+/*select {
+    height: 40px;
+    width: 177px;
+    color: #8D8C8C;
+    font-size: 15px;
+    border: 1px solid #C7C4C4;
+}*/
+
+/*textarea {
+    color: #8D8C8C;
+    font-size: 17px;
+    border: 1px solid #C7C4C4;
+}*/
+
+/*input[type=button], input[type=submit], button {
+    color: #fff;
+    padding: 9px 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #86a743;
+    white-space: nowrap;
+}*/
+
+/*input[type=button]:hover, input[type=submit]:hover, button:hover {
+        background: #096BC5;
+        color: #fff;
+        border: 1px solid #fff;
+    }*/
+
+.ActiveBtn {
+    background: #096BC5;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/*****************************************************************************************************************/
+#close {
+    float: right;
+    top: -5px;
+    position: relative;
+}
+
+.titlePopup {
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    color: #797777;
+}
+
+.btn_Afficher_List {
+    margin: 40px 280px;
+    width: 250px;
+    opacity: 1;
+}
+
+.Back_List {
+    position: relative;
+}
+
+.MaskGridBtn {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 115px;
+    border: 1px solid #E2E2E2;
+    top: 0;
+    opacity: 0.9;
+}
+
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #3b3c34;
+    display: none;
+}
+
+#SvgCarte {
+    height: 565px;
+    width: 565px;
+    margin: auto;
+}
+
+svg {
+    height: 565px;
+    width: 575px;
+}
+
+.clspoly {
+    fill: #9fb50a;
+    stroke: white;
+    stroke-width: 1;
+}
+
+    .clspoly:hover {
+        fill: #e03f37;
+        cursor: pointer;
+    }
+
+#detailsbox {
+    text-decoration: none;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    height: auto;
+    vertical-align: top;
+    width: auto;
+    font-size: 14px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background: #798162; /* opacity:0.6;*/
+    color: white;
+    padding: 0 5px;
+}
+
+.tblPJ {
+    width: 500px;
+}
+
+    .tblPJ tr td {
+        border: 1px solid #ccc;
+    }
+
+#detailsbox li {
+    height: 35px;
+    border: 0;
+    box-shadow: none;
+    width: auto;
+    margin: 0;
+}
+
+    #detailsbox li div {
+        width: 20px;
+        height: 20px;
+    }
+
+/*------------------------------------------TableImprimes--------------------------------------------*/
+
+.TableImprimes {
+    margin: auto;
+    width: 870px;
+    padding: 10px;
+}
+
+
+/*------------------------------------------Panel--------------------------------------------*/
+
+.PanelRecherche {
+    border: 1px solid #E0E0DC;
+    width: 462px; /*height:150px;*/
+    background: url(../img/back-panel-Recherche.png);
+    display: inline;
+    float: right;
+    margin: 10px 0;
+}
+
+    .PanelRecherche:hover {
+        background-color: #fcfcf0;
+        display: inline;
+        float: right;
+        margin: 10px 0;
+    }
+
+    .PanelRecherche:first-child {
+        margin-left: 15px;
+    }
+
+.title-PanelRecherche {
+    padding: 4px 7px 7px 0;
+    color: #fff;
+    background: url( ../img/back-title-panel-Recherche.png) repeat;
+}
+
+.title-Panel {
+    display: inline;
+    float: right;
+}
+
+.left-title-panel {
+    background: url( ../img/back-title-panel-Recherche-Left.png) no-repeat;
+    width: 74px;
+    height: 30px;
+}
+
+
+.f-nav-Fixed {
+    background: #EDEDE9;
+    width: 100%;
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 7px #000;
+    -webkit-box-shadow: 0px 1px 7px #000;
+    -moz-box-shadow: 0px 1px 7px #000;
+}
+
+
+/*------------------------------------------Statistique--------------------------------------------*/
+
+#Statsitique {
+    padding: 17px;
+}
+
+    #Statsitique ul li {
+        margin: 7px;
+    }
+
+.statisticInline {
+    display: inline;
+    float: right;
+    height: 70px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.StatiPourcentage {
+    border: 1px solid #ccc;
+    height: 60px;
+    width: 300px;
+}
+
+.Statimg {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 0 10px;
+}
+
+    .Statimg img {
+        width: 53px;
+        height: 48px;
+    }
+
+.NumDossier_Juridiction {
+    font-size: 13px;
+}
+
+.Pourcentage-1 {
+    width: 290px;
+    border: 1px solid #ccc;
+    padding: 1px;
+    margin: 7px 0;
+}
+
+.Pourcentage-2 {
+    padding: 5px 0px;
+    text-indent: 7px;
+    background: #004276;
+    font-size: 11px;
+    color: #fff;
+}
+
+.PourcInline {
+    display: inline;
+    float: right;
+}
+
+/*------------------------------------------------*/
+
+.TabResult tr td {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+
+#res_Onglet {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+/*//------------------Questionnaire------------*/
+#FrmQuestion-Frm > ul > li {
+    font-size: 17px;
+    color: #9E9E9E;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.Response {
+    color: #000;
+}
+
+#FrmQuestion-Frm > ul li .ListItemsReponse {
+    margin: 7px 15px;
+    color: #000;
+    border: 1px solid #E5E5E5;
+    background: #F5F5F5;
+    padding: 5px 15px;
+    width: 700px;
+}
+
+.Paragraphe {
+    text-indent: 30px;
+    margin: 17px;
+    color: #CA7474;
+    background: #FDFDE9;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.ResultReponses {
+    padding: 7px;
+    background: #fff;
+    margin: 7px 17px;
+}
+
+
+#Datepicker-Container {
+   
+}
+
+.Datepicker-Caption {
+    background: url(../img/bleu/datepicker_ListEtatJuridiction.html)no-repeat 0 -65px #f7f6f7;
+    width: 225px;
+    height: 122px;
+    font-family: UniversNextArabicRegular;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #C7C7C7;
+    font-weight: bold;
+}
+
+    .Datepicker-Caption h1 {
+        font-family: UniversNextArabicRegular;
+        font-size: 1.9vw;
+        font-weight: bold;
+        color: #38a446;
+        text-shadow: 2px 2px 1px #fff;
+    }
+
+.DatePicker-selectDate {
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 192px;
+    
+}
+
+.DatePicker-selectDate-container {
+    width: 100%;
+}
+
+.DatePicker-selectDate-Year {
+    background: #EFEEEE;
+    padding: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+.DatePicker-selectDate-Month ul li {
+    padding: 5px 0 7px 0;
+    width: 58px;
+    text-align: center;
+    float: right;
+    margin: 1px 2px;
+    border: 1px solid #ccc;
+}
+
+.Datepicker-Active {
+    background: #38A446;
+    color: #fff;
+    cursor: pointer;
+}
+
+    .Datepicker-Active:hover {
+        background: #AE3B3B;
+    }
+
+#Etat-Juridiction ul li {
+    padding: 5px 7px;
+    border: 1px solid #ccc;
+}
+
+    #Etat-Juridiction ul li:hover {
+        background: #f4f4f4;
+    }
+
+#Etat-Juridiction div {
+    margin: 7px 0;
+}
+
+#Etat-Juridiction p {
+    color: red;
+}
+
+.span {
+    color: red;
+}
+
+ 
+.Agenda {
+}
+
+.ContentAgendaStatic {
+    padding: 17px;
+}
+
+/*.Txtpresentation {
+    background:#FFFFF1;
+     width:53%;
+}
+
+.StatisJuridiction {
+     width:44%;.DatePicker-selectDate-Month ul li
+    box-shadow: 2px 2px 7px #8A8A8A;
+    padding: 0 24px;
+    margin: 13px;
+}*/
+
+.RightSpan {
+    float: right;
+}
+
+.pavServ_title h6 {
+       vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.Block-Absolute {
+    height: 56px;
+    position: relative;
+}
+
+.btn-position {
+    bottom: 0;
+    position: absolute;
+}
+
+@media (min-width: 1200px) {
+    .FormRecherche {
+        font-size: 13px;
+    }
+
+    .InformationRecher {
+        /*color: #717171;*/
+        font-size: 13px;
+    }
+
+    
+
+    .pavServ_title-Jur h6 {
+        /*font-size: 1.4vh;*/
+    }
+
+    .btn-position {
+        position: relative;
+    }
+
+    
+}
+
+
+.ListeMenuSelect {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .ListeMenu {
+        display: none;
+    }
+
+    .ListeMenuSelect {
+        display: inline-block;
+    }
+    #main_Audience tr td:nth-child(2), #main_Audience tr td:nth-child(4) {
+    display: none;
+}
+}
+
+.blcok-panel {
+    background: #EFF0EB;
+    padding: 15px;
+}
+
+li[role="presentation"] a {
+    cursor: pointer;
+}
+
+.block-from {
+    margin: 3px;
+}
+
+.block-Topmargin {
+    margin: 5px 0;
+}
+
+.block-Parent {
+    background: #fff;
+    padding: 7px;
+    border: 1px solid #B2B3AD;
+    margin: 5px 0;
+}
+
+/*#imgCaptcha {
+    height: 33px;
+    border-radius: 5px;
+}*/
+
+.RCPanel {
+    background:rgba(253, 253, 233, 0.7);
+    padding:15px;
+    margin: 0 17px;
+    border: 1px solid #F1F1CD;
+}
+
+.bs-bg-classes p.bg-success {
+    padding: 15px;
+}
+
+.RC h6 {
+        font-size: 22px;
+    font-family: cursive;
+        color: #257874;
+}
+
+.RC {
+      margin: 15px 15px 0 0;
+}
+
+/* eof daterangepicker */
+/* Tocify */
+
+@media (min-width: 1200px) {
+    .tocify {
+       width: 15%;
+    }
+}
+.tocify {
+   
+  max-height: 63%;
+  overflow: auto;
+  position: fixed;
+  border: 1px solid #E5E5E5;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  margin:0 7px;
+}
+.tocify ul,
+.tocify li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 30px;
+}
+.tocify ul.tocify-header > li > a {
+  border-bottom: 1px solid #E5E5E5;
+}
+.tocify ul.tocify-subheader {
+  display: none;
+}
+.tocify ul.tocify-subheader li.tocify-item a {
+  background: #F5F5F5;
+  color: #AB7D6F;
+}
+.tocify ul.tocify-subheader li.tocify-item a:hover {
+  background: #F0F0F0;
+}
+.tocify ul.tocify-subheader li.tocify-item.active a {
+  background: #F8F8EA;
+}
+.tocify li.tocify-item a {
+  background: #FFF;
+  padding:5px 10px;
+  font-size: 12px;
+  color: #257874;
+  line-height: 20px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.tocify li.tocify-item a:hover {
+  border-left: 3px solid #AB7D6F ;
+}
+.tocify li.tocify-item.active a {
+  border-left: 3px solid #257874 ;
+  /*color: #FFF;*/
+}
+.tocify-header {
+  text-indent: 10px;
+}
+.tocify-subheader {
+  text-indent: 20px;
+}
+.tocify-subheader li {
+  font-size: 12px;
+}
+.tocify-subheader .tocify-subheader {
+  text-indent: 30px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader {
+  text-indent: 40px;
+}
+.tocify-content h2{
+    font-size: 22px;
+    font-family: cursive;
+    color: #257874;
+}
+.tocify-content h3{
+    font-size: 17px;
+    font-family: cursive;
+    color: #AB7D6F;
+}
+.tocify-content .infos  {
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+}
+.tocify-content .infos i {
+    font-size: 12px;
+    color: #a7adb5;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.title-panel h5{
+    color:#1b809e;
+}
+.InfoRC, .FormRC {
+    border-radius:5px;
+    padding:5px;
+}
+.InfoRC {
+  border:1px solid #f5fad0;
+  background:#fefbf0;
+  width:95%;
+  margin-bottom: 7px;
+}
+.InfoRC > ul > li >ul> li {
+ 
+  list-style-position :inside;
+  text-indent:7px;
+}
+.InfoRC > ul > li >ul> li ul li {
+  list-style-type:decimal;
+  list-style-position :inside;
+  text-indent:20px;
+}
+.FormRC {
+ border:1px solid #ECECEC;
+}
+
+.containerRC {
+    padding-bottom:10px;
+}
+
+.link-pointer {
+    cursor:pointer;
+}
+/* END Tocify */
+
+.Files ul li{
+    border:1px solid #E5E5E5;
+    padding:10px;
+    margin:3px 0;
+}
+
+
+.Timeine {background: #fff;}
+.Timeine .Timeine-Categorie{  background: #ca0f0f;
+		    color: #fff;
+		    height: 100%;
+		    padding: 7px;
+		    font-size: 21px;
+		    text-align: center;}
+.Timeine .Timeine-container  {padding: 7px 0;}
+.Timeine .Timeine-Outil ul{margin: 0;}
+.Timeine .Timeine-Outil ul li{float:right; margin:1px;}
+.Timeine .Timeine-Outil ul li span{padding: 5px;border:1px solid #d6d6d6;color: #d6d6d6;}
+.Timeine-text{
+    height: 28px;
+
+}
+.vcenter {
+    animation: MoveText 2s infinite;
+}
+@keyframes MoveText {
+    0%{margin-right: 0;}
+    50%{margin-right: 30px;}
+    100%{margin-right: 0px;}
+}
+
+
+.NewService{
+    animation: clignoter 2s infinite;
+}
+@keyframes clignoter {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.frmrechParCom {
+    margin-top:15px;
+}
+
+
+.etatPaiment {
+    color:red;
+}
+
+#Result_RC span:empty {
+   display: none;
+}
+
+div:empty {
+  /* display: none;
+  height: 29px;*/
+}
+
+span:empty {
+   display: none;
+}
+
+.InfosCarte {
+        margin-bottom: 15px;
+}
+
+.modal-dialog {
+            width: 800px;
+            /* must be half of the width, minus scrollbar on the left (30px) */
+        }
