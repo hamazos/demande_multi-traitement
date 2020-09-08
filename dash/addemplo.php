@@ -55,7 +55,6 @@
                            <thead class="text-light text-center">
                                <th >Nom</th>
                                <th>username</th>
-                               <th>action</th>
                            </thead>
                            <tbody>
                            <?php 
@@ -66,9 +65,6 @@
                             echo '<tr>
                                     <td><input value="'.$employes->nom.'" class="text-center" readonly></td>
                                     <td><input value="'.$employes->username.'" class="text-center " readonly></td>
-                                    <td>
-                                        <a class="btn btn-warning text-light" href="?page=alldemandes&id_employe='.$employes->id.'">Show les demmande </a>
-                                    </td>
                                  </tr>';
                                  
                                //  SELECT demandes.* FROM `demandes`,`operations`,`departements` WHERE demandes.id_operation=operations.id AND operations.id_departement= departements.id
