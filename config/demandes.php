@@ -23,7 +23,6 @@ if (isset($_POST['function'])) {
             $tel1 = htmlspecialchars($_POST['tel1']);
             $tel2 = htmlspecialchars($_POST['tel2']);
             $mail = htmlspecialchars($_POST['mail']);
-            $departement = htmlspecialchars($_POST['departement']);
             $operation = htmlspecialchars($_POST['operation']);
 
             if (isset($_POST['req']) && $_POST['req'] == "insert") {
@@ -112,13 +111,13 @@ function InsertDemande($cin, $prenom, $nom, $tel1, $tel2, $mail, $operation)
 
         // Insertion citoyen
 
-        $sql = "INSERT INTO citoyens (cin, prenom, nom , tel1, tel2,mail,date_demande)
-        VALUES ('$cin', '$prenom', '$nom', '$tel1', '$tel2', '$mail', current_timestamp())";
+        $sql = "INSERT INTO citoyens (`cin`, `prenom`, `nom`, `tel1`, `tel2`, `mail`)
+        VALUES ('$cin', '$prenom', '$nom', '$tel1', '$tel2', '$mail')";
 
         $conn->exec($sql);
 
         // Insertion de l'operation pour le citoyen
-        echo $id_citoyen = $conn->lastInsertId();
+        $id_citoyen = $conn->lastInsertId();
 
         $stmt = $conn->prepare("SELECT id FROM `operations` WHERE nom = '$operation'");
         $stmt->execute();
@@ -129,17 +128,17 @@ function InsertDemande($cin, $prenom, $nom, $tel1, $tel2, $mail, $operation)
             $id_operation = $row[0]['id'];
         }
 
-        
-        $sql = "INSERT INTO demandes (`status`, `date_demande`, `id_citoyen`, `id_operation`)
-        VALUES ('X', '$date_demande', '$id_citoyen', '$id_operation')"; // X = envoyer, O = en cours de traitement, V = Valider
+        $date_demande = date("Y-m-d");
+        $sql = "INSERT INTO demandes (`status`, `date_demande`, `date_traitement`, `date_validation`, `id_citoyen`, `id_operation`)
+        VALUES ('X', '$date_demande', 'لم تتم بعد', 'لم تتم بعد', '$id_citoyen', '$id_operation')"; // X = envoyer, O = en cours de traitement, V = Valider
 
         $conn->exec($sql);
-
 
         echo $conn->lastInsertId();
 
     } catch (PDOException $e) {
-        echo 'error';
+        echo $sql . "<br>" . $e->getMessage();
+        // echo 'error';
     }
 
     $conn = null;
@@ -154,6 +153,7 @@ function UpdateDemande($cin, $prenom, $nom, $tel1, $tel2, $mail, $operation)
 
         $sql = "UPDATE citoyens SET prenom='$prenom', nom='$nom', tel1='$tel1', tel2='$tel2', mail='$mail' WHERE cin='$cin'";
 
+		$conn->exec($sql);
         
         // Update de l'operation pour le citoyen
         $stmt = $conn->prepare("SELECT id FROM `operations` WHERE nom = '$operation'");
@@ -166,18 +166,16 @@ function UpdateDemande($cin, $prenom, $nom, $tel1, $tel2, $mail, $operation)
         }
 
         $date_demande = date("Y-m-d");
-        $sql = "INSERT INTO demandes (`status`, `id_citoyen`, `id_operation`, `date_demande`)
-        VALUES ('X', (SELECT id FROM citoyens WHERE cin='$cin'), $id_operation, $date_demande)"; // X = envoyer, O = en cours de traitement, V = Valider
+        $sql = "INSERT INTO demandes (`status`, `date_demande`, `date_traitement`, `date_validation`, `id_citoyen`, `id_operation`)
+        VALUES ('X', '$date_demande', 'لم تتم بعد', 'لم تتم بعد', (SELECT id FROM citoyens WHERE cin='$cin' LIMIT 1), $id_operation)"; // X = envoyer, O = en cours de traitement, V = Valider
 
         $conn->exec($sql);
-
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
       
         echo $conn->lastInsertId();
 
     } catch (PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();
+        // echo 'error';
     }
 
     $conn = null;
