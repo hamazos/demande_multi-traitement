@@ -11,9 +11,11 @@ $id_departement=isset($_GET['id_departement'])? $_GET['id_departement'] : null ;
                      
                         <table class="table">
                            <thead class="text-light text-center">
-                           <th>Status</th>
+                           
                            <th>date traitement</th>
                            <th>date validation</th>
+                           <th>nom</th>
+                           <th>telephone</th>
                            </thead>
                            <tbody>
                            <?php 
@@ -22,10 +24,16 @@ $id_departement=isset($_GET['id_departement'])? $_GET['id_departement'] : null ;
                         $stmt = $conn->prepare($sql);
                         $stmt->execute();
                         while($demandes=$stmt->fetch(PDO::FETCH_OBJ)){
+                           $sql2 = "SELECT * FROM citoyens WHERE id=$demandes->id_citoyen";
+                           $stmt2 = $conn->prepare($sql2);
+                           $stmt2->execute();
+                           $citoyen = $stmt2->fetch(PDO::FETCH_OBJ);
                             echo '<tr>
-                                    <td><input value="'.$demandes->status.'" class="text-center" readonly></td>
+                                    
                                     <td><input value="'.$demandes->date_traitement.'" class="text-center " readonly></td>
                                     <td><input value="'.$demandes->date_validation.'" class="text-center " readonly></td>
+                                    <td><input value="'.$citoyen->prenom." ".$citoyen->nom.'" class="text-center " readonly></td>
+                                    <td><input value="'.$citoyen->tel1.'" class="text-center " readonly></td>
                                  </tr>';
                         }
                         ?>
